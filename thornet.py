@@ -1,15 +1,18 @@
 #!/usr/bin/python
 # -*- encoding: utf-8 -*-
 
-import sys
 from assets.program_checks import *
 
-project_page = 'https://github.com/5kyc0d3r/thornet'
 
 categories = ['Wireless Attacks', 'Backdoor Generators', 'Brute Force Attacks',
               'DDoS Attacks', 'System Shell', 'Man In The Middle Attacks']
 
-messages = {'exit': 'Thank you for using Thornet, goodbye!'}
+messages = {'exit': 'Thank you for using Thornet, goodbye!',
+            'requirements_check': '{}{}{} {}'.format(red + bold + '[',
+                                                     green + bold + '*',
+                                                     red + bold + ']',
+                                                     white + bold + 'Checking if required programs are installed....\n')
+            }
 
 os.system('clear')
 
@@ -148,8 +151,7 @@ if __name__ == '__main__':
     program_not_installed = False
     check_for_update()
     programs_required = ['aircrack-ng', 'ettercap', 'xterm', 'git']
-    print '{}{}{} {}'.format(red + bold + '[', green + bold + '*', red + bold + ']',
-                             white + bold + 'Checking if required programs are installed....\n')
+    print messages['requirements_check']
     for programs in reversed(programs_required):
         is_installed = check(programs)
         if is_installed:

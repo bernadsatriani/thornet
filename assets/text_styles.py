@@ -13,8 +13,9 @@ underline = '\033[4m'
 green_block = '\x1b[6;6;42m'  # 2nd 6; --> text-color
 no_block = '\x1b[0m'
 
-version = float('1.0')
-build = 23
+version = float('1.1')
+build = 24
+project_page = 'https://github.com/5kyc0d3r/thornet'
 
 brand = red + bold + """
         ▄▄▄█████▓ ██░ ██  ▒█████   ██▀███   ███▄    █ ▓█████ ▄▄▄█████▓
@@ -28,7 +29,7 @@ brand = red + bold + """
                   ░  ░  ░    ░ ░     ░              ░    ░  ░
 
                 {}
-              {} Latest version: [{}]
+              {} Thornet version: [{}]
                Project page: {}
 """.format(white + bold + underline + italic + 'Automated attacks for faster hacking / cracking.' + white,
            bold + yellow + italic + 'THORNET TOOLSET BY @5kyc0d3r.' + white + red + bold,
