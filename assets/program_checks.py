@@ -14,7 +14,7 @@ def update_script():
 
 def check_for_update():
     print white + bold + 'Checking for updates....' + white
-    version_url = 'https://raw.githubusercontent.com/5kyc0d3r/thornet/master/build'
+    version_url = 'https://raw.githubusercontent.com/5kyc0d3r/thornet/master/info/build'
     repo_version = int(urllib2.urlopen(version_url).read())
     if build < repo_version:
         print exclam_mark('A newer version of Thornet Toolset was found! '
