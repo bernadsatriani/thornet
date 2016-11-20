@@ -2,10 +2,7 @@
 # -*- encoding: utf-8 -*-
 
 import sys
-import urllib2
-from assets.text_styles import *
 from assets.program_checks import *
-
 
 project_page = 'https://github.com/5kyc0d3r/thornet'
 
@@ -149,8 +146,8 @@ def main():
 
 if __name__ == '__main__':
     program_not_installed = False
-    urllib2.urlopen('https://github.com')
-    programs_required = ['aircrack-ng', 'ettercap', 'xterm']
+    check_for_update()
+    programs_required = ['aircrack-ng', 'ettercap', 'xterm', 'git']
     print '{}{}{} {}'.format(red + bold + '[', green + bold + '*', red + bold + ']',
                              white + bold + 'Checking if required programs are installed....\n')
     for programs in reversed(programs_required):
