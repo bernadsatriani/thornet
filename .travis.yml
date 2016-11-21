@@ -6,3 +6,4 @@ script:
   - sudo python setup.py install
   - sudo cd /usr/local/bin
   - python -c "import thornet"
+
