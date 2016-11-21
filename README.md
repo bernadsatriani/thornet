@@ -4,4 +4,6 @@
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000)](https://github.com/5kyc0d3r/thornet/blob/master/LICENSE)
 [![Packagist](https://img.shields.io/badge/platform-Linux-orange.svg)](#)
 
+![alt text](http://i.imgur.com/826hoc3.png "Thornet Toolset v1.2")
+
 Automated attacks, no more typing in long ass commands.
