@@ -50,6 +50,7 @@ def update_script(repo_version):
     print program_info('Script updated.', symbol='+')
     print program_info('Restarting....')
     os.execl('/usr/local/bin/thornet', '', '')
+    sys.exit(0)
 
 
 def check_for_update():
