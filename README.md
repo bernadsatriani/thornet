@@ -6,7 +6,7 @@
 
 ![alt text](http://i.imgur.com/826hoc3.png "Thornet Toolset v1.2")
 
-Thornet Toolset allows you to quickly launch all sorts of attacks, including but not limited to, Wi-Fi attacks, Man In The Middle Attacks, DDoS Attacks.
+Thornet Toolset allows you to quickly launch all sorts of attacks, including but not limited to, Wi-Fi attacks, Man In The Middle Attacks and DDoS Attacks.
 
 ## What is Thornet?
 
