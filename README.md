@@ -6,4 +6,8 @@
 
 ![alt text](http://i.imgur.com/826hoc3.png "Thornet Toolset v1.2")
 
-Automated attacks, no more typing in long ass commands.
+Thornet Toolset allows you to quickly launch all sorts of attacks, including but not limited to, Wi-Fi attacks, Man In The Middle Attacks, DDoS Attacks.
+
+## What is Thornet?
+
+Thornet is a tool that was made to launch attacks easier. It was written in Python 2.7 by [@5kyc0d3r](https://github.com/5kyc0d3r).
