@@ -55,8 +55,8 @@ def numbered_list(my_list):
     return nm_list
 
 
-def exclam_mark(message, color=green, text_color=green):
-    return red + bold + '[' + color + bold + '!' + red + bold + '] ' + text_color + bold + message + white
+def program_info(message, symbol='!', symbol_color=green, text_color=white):
+    return red + bold + '[' + symbol_color + bold + symbol + red + bold + '] ' + text_color + bold + message + white
 
 
 def exit_message(message):

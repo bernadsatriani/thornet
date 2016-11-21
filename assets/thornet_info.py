@@ -1,7 +1,7 @@
 from text_styles import *
 
 version = version
-build = 24
+build = 26
 project_page = 'https://github.com/5kyc0d3r/thornet'
 messages = {'exit': 'Thank you for using Thornet, goodbye!',
             'requirements_check': '{}{}{} {}'.format(red + bold + '[',
