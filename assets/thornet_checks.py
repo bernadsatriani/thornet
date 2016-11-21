@@ -44,7 +44,9 @@ def update_script(repo_version):
     zip_ref.close()
 
     print program_info('Executing setup.py....', symbol='+')
-    os.system('python %s/setup.py install' % cache_dir)
+    print white + bold
+    os.chdir('%s/thornet-master' % cache_dir)
+    os.system('python setup.py install')
     print program_info('Script updated.', symbol='+')
     print program_info('Restarting....')
     os.execl('/usr/local/bin/thornet', '', '')
