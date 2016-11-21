@@ -1,9 +1,13 @@
+#!/usr/bin/python
+
+from assets.thornet_info import version
 from distutils.core import setup
+
 
 setup(
     name='Thornet Toolset',
-    version='1.1',
-    scripts=['thornet.py'],
+    version=str(version),
+    scripts=['thornet'],
     packages=['assets'],
     url='https://github.com/5kyc0d3r/thornet',
     license='MIT',

@@ -1,18 +1,39 @@
 #!/usr/bin/python
 # -*- encoding: utf-8 -*-
 
-from assets.program_checks import *
+"""
+
+MIT License
+
+Copyright (c) 2016 Skycoder Official
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+"""
 
 
-categories = ['Wireless Attacks', 'Backdoor Generators', 'Brute Force Attacks',
+from assets.thornet_checks import *
+
+
+categories = ['Wi-Fi Attacks', 'Backdoor Generators', 'Brute Force Attacks',
               'DDoS Attacks', 'System Shell', 'Man In The Middle Attacks']
 
-messages = {'exit': 'Thank you for using Thornet, goodbye!',
-            'requirements_check': '{}{}{} {}'.format(red + bold + '[',
-                                                     green + bold + '*',
-                                                     red + bold + ']',
-                                                     white + bold + 'Checking if required programs are installed....\n')
-            }
 
 os.system('clear')
 
@@ -23,39 +44,39 @@ for cat in categories:
     c += 1
 
     if len(cat.split()) == 5:
-        cat_split_1 = cat.split()[len(cat.split()) - 5].lower()
-        cat_split_2 = cat.split()[len(cat.split()) - 4].lower()
-        cat_split_3 = cat.split()[len(cat.split()) - 3].lower()
-        cat_split_4 = cat.split()[len(cat.split()) - 2].lower()
-        cat_split_5 = cat.split()[len(cat.split()) - 1].lower()
+        cat_split_1 = cat.split()[len(cat.split()) - 5].replace('-', '').lower()
+        cat_split_2 = cat.split()[len(cat.split()) - 4].replace('-', '').lower()
+        cat_split_3 = cat.split()[len(cat.split()) - 3].replace('-', '').lower()
+        cat_split_4 = cat.split()[len(cat.split()) - 2].replace('-', '').lower()
+        cat_split_5 = cat.split()[len(cat.split()) - 1].replace('-', '').lower()
         methods.update({c: cat_split_1 + '_' + cat_split_2 + '_' + cat_split_3 +
                         '_' + cat_split_4 + '_' + cat_split_5})
         globals().update(methods)
 
     elif len(cat.split()) == 3:
-        cat_split_1 = cat.split()[len(cat.split()) - 3].lower()
-        cat_split_2 = cat.split()[len(cat.split()) - 2].lower()
-        cat_split_3 = cat.split()[len(cat.split()) - 1].lower()
+        cat_split_1 = cat.split()[len(cat.split()) - 3].replace('-', '').lower()
+        cat_split_2 = cat.split()[len(cat.split()) - 2].replace('-', '').lower()
+        cat_split_3 = cat.split()[len(cat.split()) - 1].replace('-', '').lower()
         methods.update({c: cat_split_1 + '_' + cat_split_2 + '_' + cat_split_3})
         globals().update(methods)
 
     elif len(cat.split()) == 2:
-        cat_split_1 = cat.split()[len(cat.split()) - 2].lower()
-        cat_split_2 = cat.split()[len(cat.split()) - 1].lower()
+        cat_split_1 = cat.split()[len(cat.split()) - 2].replace('-', '').lower()
+        cat_split_2 = cat.split()[len(cat.split()) - 1].replace('-', '').lower()
         methods.update({c: '%s_%s' % (cat_split_1, cat_split_2)})
         globals().update(methods)
 
     else:
-        cat_split_1 = cat.split()[len(cat.split()) - 1].lower()
+        cat_split_1 = cat.split()[len(cat.split()) - 1].replace('-', '').lower()
         methods.update({c: '%s' % cat_split_1})
         globals().update(methods)
 
 
-def wireless_attacks(show_brand=True):
+def wifi_attacks(show_brand=True):
     os.system('clear')
     if show_brand:
         print brand
-    print category_banner('Wireless Attacks')
+    print category_banner('Wi-Fi Attacks')
     sys.exit(0)
 
 

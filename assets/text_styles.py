@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
 
+version = 1.1
+
 purple = '\033[95m'
 blue = '\033[94m'
 green = '\033[92m'
@@ -13,9 +15,6 @@ underline = '\033[4m'
 green_block = '\x1b[6;6;42m'  # 2nd 6; --> text-color
 no_block = '\x1b[0m'
 
-version = float('1.1')
-build = 24
-project_page = 'https://github.com/5kyc0d3r/thornet'
 
 brand = red + bold + """
         ▄▄▄█████▓ ██░ ██  ▒█████   ██▀███   ███▄    █ ▓█████ ▄▄▄█████▓
