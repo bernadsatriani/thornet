@@ -10,5 +10,5 @@ Thornet Toolset allows you to quickly launch all sorts of attacks, including but
 
 ## What is Thornet?
 
-Thornet is an automation tool that was made to launch faster attacks, without having to type in long commands. Thornet relies on a set of tools that should be installed on your system (all tools used by Thornet are pre-installed on Kali Linux). Ofcourse this does not include every feature of all the tools used by this script.
-It was written in Python 2.7 by [@5kyc0d3r](https://github.com/5kyc0d3r).
+Thornet is an automation tool that was made to launch faster attacks, without having to type in long commands. Thornet does not come with any tools and therefore relies on a set of tools that should be installed on your system before using it (all tools used by Thornet come pre-installed on Kali Linux). Thornet currently does not include every feature of all the tools that are being used by it.
+Thornet was written in Python 2.7 by [@5kyc0d3r](https://github.com/5kyc0d3r).
