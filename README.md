@@ -39,4 +39,4 @@ Thornet was written in Python 2.7 by [@5kyc0d3r](https://github.com/5kyc0d3r).
 ## License
 Thornet Toolset is licensed under the terms of the MIT license.
 
-You can find and view the license in the [Official Thornet Repository](https://github.com/5kyc0d3r/blob/master/LICENSE).
+You can find and view the license in the [Official Thornet Repository](https://github.com/5kyc0d3r/thornet/blob/master/LICENSE).
