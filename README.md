@@ -13,6 +13,22 @@ Thornet Toolset allows you to quickly launch all sorts of attacks, including but
 Thornet is an automation tool that was made to launch faster attacks, without having to type in long commands. Thornet does not come with any tools and therefore relies on a set of tools that should be installed on your system before using it (all tools used by Thornet come pre-installed on Kali Linux). Thornet currently does not include every feature of all the tools that are being used by it. Please see the [requirements section](#requirements) to see what tools need to be installed on your system in order to use Thornet.
 Thornet was written in Python 2.7 by [@5kyc0d3r](https://github.com/5kyc0d3r).
 
+## Installation
+1. Clone the repo & cd into the new folder (thornet)
+
+   ```$ git clone https://github.com/5kyc0d3r/thornet.git && cd thornet```
+
+2. Run the setup.py
+   
+   ```$ sudo python setup.py install```
+   
+3. Run Thornet
+
+  At this point, if all of the above commands were successful, then Thornet should now be installed and is ready to execute.
+  *Thornet requires root privileges, so run it with sudo if you're not root.*
+
+   ```$ sudo thornet```
+
 ## Requirements
 * Aircrack-ng
 * Ettercap
