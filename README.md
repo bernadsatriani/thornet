@@ -24,7 +24,7 @@ Thornet was written in Python 2.7 by [@5kyc0d3r](https://github.com/5kyc0d3r).
    
 3. Run Thornet
 
-  At this point, if all of the above commands were successful, then Thornet should now be installed and is ready to execute.
+  At this point in time, if all of the above commands were successful, then Thornet should now be installed and is ready to be executed.
   *Thornet requires root privileges, so run it with sudo if you're not root.*
 
    ```$ sudo thornet```
